@@ -39,7 +39,7 @@ export default class CoronaBusterscene extends Phaser.Scene {
 			frameHeight: 16,
 		})
 		this.load.image("handSanitizer", "images/handsanitizer.png")
-		this.load.audio("bgsound", "sfx/AlloneAgainst Enemy.ogg")
+		this.load.audio("bgsound", "sfx/AlloneAgainstEnemy.ogg")
 		this.load.audio("laser", "sfx/sfx_laser.ogg")
 		this.load.audio("destroy", "sfx/destroy.mp3")
 		this.load.audio("life", "sfx/handsanitizer.mp3")
@@ -226,6 +226,7 @@ export default class CoronaBusterscene extends Phaser.Scene {
 			speed: 30,
 			rotation: 0.1,
 		}
+		// @ts-ignore
 		const enemy = this.enemies.get(0, 0, "enemy", config)
 		const positionX = Phaser.Math.Between(50, 350)
 		if (enemy) {
@@ -257,6 +258,7 @@ export default class CoronaBusterscene extends Phaser.Scene {
 			speed: 60,
 			rotation: 0,
 		}
+		// @ts-ignore
 		const handsanitizer = this.handsanitizer.get(0, 0, "handSanitizer", config)
 		const positionX = Phaser.Math.Between(70, 330)
 		if (handsanitizer) {
