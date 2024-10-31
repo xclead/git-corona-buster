@@ -12,13 +12,13 @@ export default class Laser extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	die() {
-		this.destroy
+		this.destroy()
 	}
 
 	update(time) {
 		this.setVelocityY(-200)
 		if (this.y < -10) {
-			this.die
+			this.die()
 		}
 	}
 }
