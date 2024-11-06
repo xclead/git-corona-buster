@@ -15,7 +15,7 @@ export default class FallingObject extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	die() {
-		this.destroy
+		this.destroy()
 	}
 
 	update(time) {

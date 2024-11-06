@@ -167,7 +167,7 @@ export default class CoronaBusterscene extends Phaser.Scene {
 		shoot.on(
 			"pointerup",
 			() => {
-				this.shoot = true
+				this.shoot = false
 			},
 			this
 		)
